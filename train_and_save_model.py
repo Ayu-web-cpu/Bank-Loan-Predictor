@@ -12,26 +12,16 @@ data = {
     'loan_approved': np.random.choice([0, 1], 200)
 }
 df = pd.DataFrame(data)
-
-
 imputer = SimpleImputer(strategy='mean')
 df[['age', 'income', 'credit_score']] = imputer.fit_transform(df[['age', 'income', 'credit_score']])
-
-
 le = LabelEncoder()
 df['education'] = le.fit_transform(df['education'].astype(str))
-
-
 X = df[['age', 'income', 'education', 'credit_score']]
 y = df['loan_approved']
-
 scaler = StandardScaler()
 X_scaled = scaler.fit_transform(X)
-
 rf = RandomForestClassifier(random_state=42)
 rf.fit(X_scaled, y)
-
-# Save model, scaler, encoder
 joblib.dump(rf, 'rf_model.pkl')
 joblib.dump(scaler, 'scaler.pkl')
 joblib.dump(le, 'education_encoder.pkl')
