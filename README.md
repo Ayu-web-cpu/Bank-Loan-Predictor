@@ -1,6 +1,6 @@
 # Bank Loan Approval Predictor
 
-A simple, interactive web app that predicts whether a bank loan will be approved based on applicant details like age, income (up to ₹10 crore), education, and credit score. Built with Python, scikit-learn, and Streamlit.
+A simple, interactive web app that predicts whether a bank loan will be approved based on applicant details like age, income  education and credit score. Built with Python, scikit-learn, and Streamlit.
 
 ---
 
