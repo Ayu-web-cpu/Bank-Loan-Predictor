@@ -10,7 +10,7 @@ Try the app instantly:
 [https://bank-loan-predictor-o7pssjesfcqx63bgfnuk3w.streamlit.app/](https://bank-loan-predictor-o7pssjesfcqx63bgfnuk3w.streamlit.app/)
 
 ---
-## 🛠️ Features
+##  Features
 
 - **Instant Prediction:** Enter applicant details and get a loan approval prediction with probability.
 - **Modern Web Interface:** Easy-to-use, responsive UI built with Streamlit.
@@ -41,7 +41,7 @@ Try the app instantly:
 ## 📝 Example Usage
 
 - Open the web app in your browser.
-- Enter values for age, income (up to ₹10 crore), education, and credit score.
+- Enter values for age, income , education and credit score.
 - Click "Predict Loan Approval" to see if the loan is likely to be approved.
 
 ---
