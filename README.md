@@ -1,58 +1,82 @@
-# Bank Loan Approval Predictor
+🏦 Bank Loan Eligibility Predictor
+This is a simple and interactive machine learning web app that predicts whether a loan should be approved based on user input such as age, income, education level, and credit score.
 
-A simple, interactive web app that predicts whether a bank loan will be approved based on applicant details like age, income  education and credit score. Built with Python, scikit-learn, and Streamlit.
+Built using Streamlit, scikit-learn, and Joblib, this project is designed to simulate a real-world fintech loan eligibility system.
 
----
+🌐 Live App
+🚀 Try it live:
+👉 Bank Loan Predictor Web App
 
-##  Live Demo
+🎯 Objective
+To develop a machine learning classifier that predicts the likelihood of a loan approval using key applicant details.
 
-Try the app instantly:  
-[https://bank-loan-predictor-o7pssjesfcqx63bgfnuk3w.streamlit.app/](https://bank-loan-predictor-o7pssjesfcqx63bgfnuk3w.streamlit.app/)
+🧠 How It Works
+✳️ Inputs (via UI):
+Age: Slider between 21 to 60
 
----
-##  Features
+Annual Income: Numeric input (₹20,000 to ₹10 Cr)
 
-- **Instant Prediction:** Enter applicant details and get a loan approval prediction with probability.
-- **Modern Web Interface:** Easy-to-use, responsive UI built with Streamlit.
-- **Handles High Incomes:** Supports annual incomes up to ₹10 crore.
-- **Open Source:** All code and model training steps are included.
+Education: Dropdown (Graduate / Not Graduate)
 
----
-## How It Works
+Credit Score: Slider between 300 and 900
 
-1. **Data Generation:**  
-   Synthetic applicant data is generated for model training.
+⚙️ Processing:
+Education is encoded using LabelEncoder (education_encoder.pkl)
 
-2. **Preprocessing:**  
-   - Handles missing values
-   - Encodes education as numbers
-   - Scales features for better model performance
+Input features are scaled using StandardScaler (scaler.pkl)
 
-3. **Model Training:**  
-   - Trains a Random Forest Classifier to predict loan approval
-   - Saves the model and preprocessing objects for later use
+Prediction is made using a trained Random Forest model (rf_model.pkl)
 
-4. **Web App:**  
-   - Users enter applicant details
-   - The app preprocesses the input and predicts approval with probability
+Probabilities are shown for transparency
 
----
+✅ Output:
+If prediction is 1 → ✔️ Loan Approved!
 
-## 📝 Example Usage
+If prediction is 0 → ❌ Loan Not Approved
 
-- Open the web app in your browser.
-- Enter values for age, income , education and credit score.
-- Click "Predict Loan Approval" to see if the loan is likely to be approved.
+📁 Project Structure
+graphql
+Copy
+Edit
+Bank-Loan-Predictor/
+├── main.py                    # ✅ Main file
+├── rf_model.pkl               # Trained Random Forest model
+├── scaler.pkl                 # Scaler used during training
+├── education_encoder.pkl      # LabelEncoder for Education feature
+├── train_and_save_model.py    # Script to train and export model + encoders
+├── requirements.txt           # Project dependencies
+└── README.md                  # Project overview and documentation
+🛠️ Tech Stack
+Python 3.8+
 
----
+Streamlit – for building the web interface
 
-##  Technologies Used
+scikit-learn – for model building and preprocessing
 
-- **Python 3**
-- **scikit-learn** 
-- **pandas, numpy** 
-- **Streamlit** 
-- **joblib** 
+Joblib – for saving/loading model and preprocessors
 
----
+NumPy – for numerical transformations
+
+📊 Model Summary
+Model: Random Forest Classifier
+
+Input Features: Age, Annual Income, Education, Credit Score
+
+Target Variable: Loan Approval (Yes/No)
+
+Model Artifacts: Saved using joblib for easy deployment
+
+✅ Expected Outcome
+Predict loan approval status with confidence scores
+
+Realistic simulation of a bank’s credit approval frontend
+
+A base app that can be extended to include more features like employment history, debt ratio, etc.
+
+🙌 Acknowledgements
+Developed under the RISE Internship Program
+
+
+
+
 
