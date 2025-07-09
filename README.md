@@ -9,7 +9,7 @@ Built with **Streamlit**, **scikit-learn**, and **Joblib**, this project simulat
 ## 🌐 Live App
 
 🚀 **Try it live:**  
-👉 [Bank Loan Predictor Web App](#) <!-- Add deployed URL here -->
+👉 [Bank Loan Predictor Web App](#) <!-- Add deployed URL here -->https://bank-loan-predictor-o7pssjesfcqx63bgfnuk3w.streamlit.app/
 
 ---
 
