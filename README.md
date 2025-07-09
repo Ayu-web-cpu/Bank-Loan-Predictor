@@ -62,6 +62,11 @@ Bank-Loan-Predictor/
 - [Joblib](https://joblib.readthedocs.io/) – Model & preprocessor serialization
 - [NumPy](https://numpy.org/) – Numerical transformations
 
+## Output Example
+
+Here’s a screenshot of the output:
+
+![Screenshot 2025-07-09 101424](https://github.com/user-attachments/assets/9b7ddeaf-8b51-47a0-a963-f9807788cd11)
 
 
 ---
